@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.cabecalho {
+    background-color: #920100;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+}
+
+.titulo-site {
+    font-size: 60px;
+}
+
+.sociais img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* BANNER */
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner img {
+    width: 100%;
+    max-height: none;
+    object-fit: auto;
+}
+
+/* GRID */
+.estudantes-todos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+
+/* CARD */
+.estudante-div {
+    background-color: #293549;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.estudante-imagem {
+    width: 100px;
+}
+
+.icones img {
+    width: 25px;
+    margin: 5px;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
