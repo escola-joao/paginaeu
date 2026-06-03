@@ -1,82 +1,148 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
+body{
+    background:#111;
+    font-family:'Merienda', cursive;
 }
 
-/* HEADER */
-.cabecalho {
-    background-color: #920100;
-    color: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+header{
+    background:#b30000;
+    border:8px solid #8b0000;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    padding:15px;
 }
 
-.logo {
-    width: 80px;
+.titulo h1{
+    color:white;
+    font-family:'Permanent Marker', cursive;
+
+    font-size:3rem;
+
+    text-shadow:
+    -3px -3px 0 black,
+     3px -3px 0 black,
+    -3px  3px 0 black,
+     3px  3px 0 black;
 }
 
-.titulo-site {
-    font-size: 60px;
+header img{
+    width:150px;
+    height:150px;
+
+    object-fit:cover;
+
+    border:3px solid #111;
 }
 
-.sociais img {
-    width: 30px;
-    margin-left: 10px;
+main{
+    display:flex;
 }
 
-/* BANNER */
-.banner {
-    display: flex;
-    justify-content: center;
-}
-
-.banner img {
-    width: 100%;
-    max-height: none;
-    object-fit: auto;
-}
-
-/* GRID */
-.estudantes-todos {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 30px;
-    padding: 20px;
-}
-
-
-/* CARD */
-.estudante-div {
-    background-color: #293549;
-    text-align: center;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-}
-
-.estudante-imagem {
+aside{
+    background:#ece4e4;
     width: 100px;
+
+    display:flex;
+    flex-direction:column;
 }
 
-.icones img {
-    width: 25px;
-    margin: 5px;
+.menu-item{
+    flex:1;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    font-weight:bold;
+    font-size:1.2rem;
+
+    letter-spacing:3px;
+
+    border-bottom:2px solid #bbb;
 }
 
-/* RODAPÉ */
-.rodape {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
+.conteudo{
+    flex:1;
+
+    background:#04131a;
+
+    padding:10px;
 }
 
+.card{
+    background:#08141b;
+
+    color:white;
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    font-size:1.6rem;
+}
+
+.link{
+    color:#4ea3ff;
+}
+
+.albums{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(120px,1fr));
+
+    gap:15px;
+}
+
+.albums img{
+    width:100%;
+    height:120px;
+
+    object-fit:cover;
+
+    transition:.2s;
+}
+
+.albums img:hover{
+    transform:scale(1.05);
+}
+
+@media(max-width:800px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .titulo h1{
+        font-size:2rem;
+        text-align:center;
+    }
+
+    main{
+        flex-direction:column;
+    }
+
+    aside{
+        width:100%;
+        flex-direction:row;
+    }
+
+    .menu-item{
+        padding:10px;
+    }
+
+    .card{
+        font-size:1.1rem;
+    }
+}
