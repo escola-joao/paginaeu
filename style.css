@@ -44,6 +44,7 @@ header img{
 
 main{
     display:flex;
+     justify-content: flex-start;
 }
 
 aside{
@@ -58,10 +59,10 @@ aside{
     flex:1;
 
     display:flex;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
 
-    text-align:center;
+    text-align:start;
 
     font-weight:bold;
     font-size:1.2rem;
@@ -106,7 +107,7 @@ aside{
 
 .albums img{
     width:100%;
-    height:120px;
+    height:100%;
 
     object-fit:cover;
 
@@ -130,12 +131,15 @@ aside{
     }
 
     main{
+        justify-content: flex-start;
         flex-direction:column;
     }
 
     aside{
         width:100%;
-        flex-direction:row;
+        justify-content: flex-start;
+        flex-direction:column;
+
     }
 
     .menu-item{
@@ -144,5 +148,6 @@ aside{
 
     .card{
         font-size:1.1rem;
+        height-size: 100%;
     }
 }
