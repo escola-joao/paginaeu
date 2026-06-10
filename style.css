@@ -95,7 +95,7 @@ main{
 
 .albums img{
     width:100%;
-cover
+
     object-fit:cover;
 
     border-radius:10px;
