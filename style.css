@@ -160,3 +160,27 @@ main{
         font-size:1rem;
     }
 }
+
+
+.manos{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(180px,1fr));
+
+    gap:20px;
+}
+
+.manos img{
+    width:100%;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+    transition:.2s;
+}
+
+.manos img:hover{
+    transform:scale(1.05);
+}
