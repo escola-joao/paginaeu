@@ -98,7 +98,7 @@ main{
 
     object-fit:cover;
 
-    border-radius:10px;
+    border-radius:0px;
 
     transition:.2s;
 }
@@ -118,11 +118,12 @@ main{
 
 .albums2 img{
     width:100%;
+    
     aspect-ratio:1/1;
 
     object-fit:cover;
 
-    border-radius:10px;
+    border-radius:0px;
 
     transition:.2s;
 }
@@ -163,24 +164,32 @@ main{
 
 
 .manos{
-    display:grid;
 
-    grid-template-columns:
+     font-size:2rem;
+
+    display:flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    
+
     repeat(auto-fit,minmax(180px,1fr));
 
     gap:20px;
 }
 
-.manos img{
-    width:100%;
-
-    object-fit:cover;
-
-    border-radius:10px;
-
-    transition:.2s;
+.manos-div {
+    text-align: center;
+    padding: 15px;
+   
 }
 
-.manos img:hover{
-    transform:scale(1.05);
+.manos-imagem {
+width: 100%; 
+  max-width: 400px;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover; 
+  object-position: center; 
 }
