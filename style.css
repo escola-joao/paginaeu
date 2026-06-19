@@ -159,16 +159,12 @@ main{
 
     .card{
         font-size:1rem;
-        
     }
-    
 }
 
 
 .manos{
- 
-     border:20px solid #4b0000;
-     
+
      font-size:2rem;
 
     display:flex;
@@ -176,18 +172,19 @@ main{
     justify-content: center;
 
     align-items: center;
-   
+
+    
+
     repeat(auto-fit,minmax(180px,1fr));
 
     gap:20px;
-
-
 }
 
 .manos-div {
     text-align: center;
     padding: 15px;
-  
+   
+}
 
 .manos-imagem {
 width: 100%; 
@@ -195,14 +192,4 @@ width: 100%;
   aspect-ratio: 1 / 1; 
   object-fit: cover; 
   object-position: center; 
-}
-
-.rodape {
-    justify-content: center;
-    align-items: flex-end;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
 }
