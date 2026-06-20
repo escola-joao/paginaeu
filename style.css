@@ -1,11 +1,10 @@
 *{
-    margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
 body{
-    background:#111;
+    background:#4b0000;
     font-family:'Merienda', cursive;
     color:white;
 }
@@ -57,25 +56,25 @@ main{
 .conteudo{
     flex:1;
 
-    padding:20px;
-
-    background:#4b0000;
 }
 
 /*textos*/
 
 .card{
+flex:1;
+     
     background:#08141b;
 
-    padding:20px;
+   
 
     margin-bottom:20px;
 
-
-
     font-size:1.3rem;
     line-height:1.6;
-}
+
+     padding:20px;
+ margin:20px;
+    border-radius:10px;
 
 .link{
     color:#4ea3ff;
@@ -84,16 +83,24 @@ main{
 
 /* álbuns e ftyrtffh */
 
+
 .albums{
+
+
     display:grid;
 
     grid-template-columns:
+    
     repeat(auto-fit,minmax(180px,1fr));
 
     gap:20px;
+
+   
 }
 
 .albums img{
+
+   
     width:100%;
 
     object-fit:cover;
@@ -131,7 +138,7 @@ main{
 .albums2 img:hover{
     transform:scale(1.05);
 }
-
+}
 
 @media(max-width:800px){
 
@@ -173,17 +180,15 @@ main{
 
     align-items: center;
 
-    
-
-    repeat(auto-fit,minmax(180px,1fr));
-
     gap:20px;
+
+   
 }
 
 .manos-div {
     text-align: center;
     padding: 15px;
-   
+
 }
 
 .manos-imagem {
@@ -192,4 +197,13 @@ width: 100%;
   aspect-ratio: 1 / 1; 
   object-fit: cover; 
   object-position: center; 
+}
+
+.rodape {
+    background:#08141b;
+     border:20px solid #4b0000;
+    color: white;
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
 }
