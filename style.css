@@ -1,6 +1,7 @@
 *{
     padding:0;
     box-sizing:border-box;
+    
 }
 
 body{
@@ -9,7 +10,7 @@ body{
     color:white;
 }
 
-/* header */
+/* header abublé */
 
 header{
     background:#720101;
@@ -44,7 +45,7 @@ header img{
     border-radius:10px;
 }
 
-/* main */
+/* main, nem lembro se to usando ou pra que serve KKK*/
 
 main{
     display:flex;
@@ -75,7 +76,7 @@ flex:1;
      padding:20px;
  margin:20px;
     border-radius:10px;
-
+}
 .link{
     color:#4ea3ff;
     font-weight:bold;
@@ -138,7 +139,7 @@ flex:1;
 .albums2 img:hover{
     transform:scale(1.05);
 }
-}
+
 
 @media(max-width:800px){
 
@@ -200,10 +201,12 @@ width: 100%;
 }
 
 .rodape {
+    font-size:2rem;
     background:#08141b;
      border:20px solid #4b0000;
     color: white;
-    text-align: left;
+    text-align: center;
     padding: 20px;
     border-radius: 10px;
 }
+
