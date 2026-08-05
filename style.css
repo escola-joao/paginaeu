@@ -200,6 +200,31 @@ width: 100%;
   object-position: center; 
 }
 
+.video-titulo {
+
+    text-align: center;
+    color:white;
+    font-size: 42px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.video {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 20px;
+    background:#08141b;
+    border:20px solid #4b0000;
+    border-radius: 10px;
+
+}
+
+
+
+
 .rodape {
     font-size:2rem;
     background:#08141b;
