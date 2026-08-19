@@ -26,6 +26,7 @@ ul {
   background-color: #08141b;
   display: flex;
   width: 100%;
+  justify-content: center;
 }
 
 ul li a {
