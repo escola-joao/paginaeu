@@ -1,4 +1,6 @@
-{
+
+export default {
+
   "name": "react-vite-tailwind",
   "version": "0.0.0",
   "lockfileVersion": 3,
