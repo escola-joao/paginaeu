@@ -1,6 +1,6 @@
-
 #game-container {
   position: relative;
+  justify-self: center;
   width: 1024px;
   height: 576px;
   box-shadow: 0 0 30px rgba(0, 240, 255, 0.3), 0 0 60px rgba(255, 0, 85, 0.2);
@@ -43,7 +43,7 @@ canvas {
 .p-name {
   font-size: 20px;
   letter-spacing: 2px;
-  text-shadow: 2px 2px 0 #000, 0 0 10px rgba(255,255,255,0.5);
+  text-shadow: 2px 2px 0 #000, 0 0 10px rgba(255, 255, 255, 0.5);
   margin-bottom: 2px;
 }
 
@@ -57,7 +57,7 @@ canvas {
 
 .hp-outer {
   height: 24px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 .guard-outer {
@@ -109,7 +109,7 @@ canvas {
 
 #timer {
   font-size: 48px;
-  background: rgba(0,0,0,0.8);
+  background: rgba(0, 0, 0, 0.8);
   border: 3px solid #ffd700;
   color: #ffd700;
   padding: 0px 16px;
@@ -207,7 +207,8 @@ canvas {
   transition: all 0.2s;
 }
 
-.char-btn:hover, .char-btn.active {
+.char-btn:hover,
+.char-btn.active {
   border-color: #ff0055;
   background: #2a1535;
   box-shadow: 0 0 10px #ff0055;
@@ -217,7 +218,7 @@ canvas {
   font-family: monospace;
   font-size: 11px;
   color: #aaa;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   padding: 8px;
   border-radius: 4px;
   text-align: left;
