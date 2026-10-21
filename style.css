@@ -301,3 +301,251 @@ width: 100%;
 
 }
 
+
+
+
+
+#game-container {
+ 
+  width: 1024px;
+  height: 576px;
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.3), 0 0 60px rgba(255, 0, 85, 0.2);
+  border: 4px solid #1a1a3a;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #000;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* HUD */
+#hud {
+  
+  top: 15px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.player-hud {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#p2-hud {
+  align-items: flex-end;
+}
+
+.p-name {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000, 0 0 10px rgba(255,255,255,0.5);
+  margin-bottom: 2px;
+}
+
+.bar-outer {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid #fff;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.hp-outer {
+  height: 24px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.guard-outer {
+  height: 8px;
+  border-width: 1px;
+}
+
+.super-outer {
+  height: 12px;
+  border-color: #ffd700;
+}
+
+.bar-fill {
+  height: 100%;
+  width: 100%;
+  transition: width 0.1s linear;
+}
+
+.hp-fill {
+  background: linear-gradient(90deg, #ff0055, #ff5500);
+}
+
+.guard-fill {
+  background: linear-gradient(90deg, #00d2ff, #00ffff);
+}
+
+.super-fill {
+  background: linear-gradient(90deg, #ffaa00, #ffff00);
+  width: 0%;
+}
+
+#p2-hud .bar-fill {
+  float: right;
+}
+
+.wins-display {
+  font-size: 14px;
+  color: #ffd700;
+  margin-top: 2px;
+  text-shadow: 1px 1px 0 #000;
+}
+
+#center-hud {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: auto;
+}
+
+#timer {
+  font-size: 48px;
+  background: rgba(0,0,0,0.8);
+  border: 3px solid #ffd700;
+  color: #ffd700;
+  padding: 0px 16px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+#fullscreen-btn {
+flex-direction: column;
+  justify-content: center;
+  margin-top: 8px;
+  background: linear-gradient(180deg, #111, #222);
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  box-shadow: 0 0 8px rgba(0, 240, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+#fullscreen-btn:hover {
+  background: #00f0ff;
+  color: #000;
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.8);
+}
+
+/* OVERLAY DE TELA E MENU */
+.overlay {  
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 25, 0.95);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+  padding: 20px;
+}
+
+#screen-title {
+  font-size: 64px;
+  color: #ff0055;
+  text-shadow: 0 0 20px #ff0055, 4px 4px 0 #00f0ff;
+  letter-spacing: 4px;
+  margin-bottom: 5px;
+}
+
+#screen-subtitle {
+  font-size: 20px;
+  color: #00f0ff;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+#char-select {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.select-box {
+  background: rgba(20, 20, 45, 0.8);
+  border: 2px solid #00f0ff;
+  border-radius: 8px;
+  padding: 15px;
+  width: 380px;
+  text-align: center;
+}
+
+.select-box h3 {
+  color: #ffd700;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.char-options {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.char-btn {
+  background: #151530;
+  border: 2px solid #444;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  flex: 1;
+  transition: all 0.2s;
+}
+
+.char-btn:hover, .char-btn.active {
+  border-color: #ff0055;
+  background: #2a1535;
+  box-shadow: 0 0 10px #ff0055;
+}
+
+.controls-legend {
+  font-family: monospace;
+  font-size: 11px;
+  color: #aaa;
+  background: rgba(0,0,0,0.5);
+  padding: 8px;
+  border-radius: 4px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.controls-legend b {
+  color: #00f0ff;
+}
+
+#start-btn {
+  background: linear-gradient(180deg, #ff0055, #990033);
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 28px;
+  padding: 12px 40px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 20px rgba(255, 0, 85, 0.6);
+  transition: transform 0.1s, box-shadow 0.2s;
+}
+
+#start-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(255, 0, 85, 0.9);
+}

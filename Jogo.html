@@ -7,6 +7,7 @@
     <title>Um Cara Que Toca Guitarra</title>
 
     <link rel="stylesheet" href="style.css">
+
     <link rel="icon" href="images/ChatGPT Image 3 de jun. de 2026, 19_35_15.png">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Merienda:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -31,8 +32,71 @@
   <li><a href="Jogo.html">Jogo</a></li>
 </ul>
 
-<main id="Jogo"></main>
+<!--jogo--->
+
+<div id="jogo-container">
+
+
+ <div id="hud">
+      <div id="p1-hud" class="player-hud">
+        <div class="p-name" id="p1-name-display">PLAYER 1</div>
+        <div class="bar-outer hp-outer"><div id="p1-hp" class="bar-fill hp-fill"></div></div>
+        <div class="bar-outer guard-outer"><div id="p1-guard" class="bar-fill guard-fill"></div></div>
+        <div class="bar-outer super-outer"><div id="p1-super" class="bar-fill super-fill"></div></div>
+        <div class="wins-display" id="p1-wins">VITÓRIAS: <span>0</span></div>
+      </div>
+
+      <div id="center-hud">
+        <div id="timer">60</div>
+        <button id="fullscreen-btn" onclick="toggleFullscreen()">TELA CHEIA</button>
+      </div>
+
+      <div id="p2-hud" class="player-hud">
+        <div class="p-name" id="p2-name-display">PLAYER 2</div>
+        <div class="bar-outer hp-outer"><div id="p2-hp" class="bar-fill hp-fill"></div></div>
+        <div class="bar-outer guard-outer"><div id="p2-guard" class="bar-fill guard-fill"></div></div>
+        <div class="bar-outer super-outer"><div id="p2-super" class="bar-fill super-fill"></div></div>
+        <div class="wins-display" id="p2-wins">VITÓRIAS: <span>0</span></div>
+      </div>
+    </div>
+
+
+    <div id="overlay-screen" class="overlay">
+      <h1 id="screen-title">MANO A MANO</h1>
+      <p id="screen-subtitle">SELECIONE OS LUTADORES</p>
+      
+      <div id="char-select">
+        <div class="select-box" id="p1-select">
+          <h3>P1 (WASD)</h3>
+          <div class="char-options" id="p1-options"></div>
+          <div class="controls-legend">
+            <b>Mover:</b> A / D | <b>Pulo:</b> W | <b>Defesa/Agachar:</b> S<br>
+            <b>Soco Rápido:</b> F | <b>Ataque Pesado / Especial:</b> G | <b>Chute:</b> H
+          </div>
+        </div>
+        
+        <div class="select-box" id="p2-select">
+          <h3>P2 (SETINHAS)</h3>
+          <div class="char-options" id="p2-options"></div>
+          <div class="controls-legend">
+            <b>Mover:</b> ◄ / ► | <b>Pulo:</b> ▲ | <b>Defesa/Agachar:</b> ▼<br>
+            <b>Soco Rápido:</b> K | <b>Ataque Pesado / Especial:</b> L | <b>Chute:</b> Ç / M
+          </div>
+        </div>
+      </div>
+
+      <button id="start-btn">INICIAR O DUELO</button>
+    </div>
+  </div>
+<canvas id="gameCanvas" width="1024" height="576"></canvas>
+
+
+
+
 <script src="jogo.js"></script>
+
+</div>
+
 
 
 
