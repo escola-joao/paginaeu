@@ -618,6 +618,8 @@ class Game {
   setupUI() {
     document.getElementById('start-btn').addEventListener('click', () => {
       this.startNewGame();
+      this.canvas = document.getElementById('gameCanvas');
+      this.canvas.style.display = "block";
     });
   }
 
@@ -673,6 +675,8 @@ class Game {
     this.startRound();
     this.state = 'PLAYING';
     this.loop();
+
+    
   }
 
   startRound() {
